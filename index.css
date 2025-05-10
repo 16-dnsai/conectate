@@ -16,7 +16,7 @@ body{
     border-radius: 20px;
     width: 380px;
     height: 480px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 50px  #e0e0e0;
@@ -61,14 +61,10 @@ input:focus{
 .leb-1{
     font-weight:bold;
     font-size: 30px;
-    text-align: center;
 }
 .container-3{
     width: 280px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .container-4{
     display: grid;
@@ -108,7 +104,7 @@ a:hover{
     .container-1{
         width: 85vw;
         height: 85vh;
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
     }
@@ -116,19 +112,15 @@ a:hover{
         width: 80vw;
         height: 80vh;
     }
-    /* .container-3  {
-        align-items: center;
-        justify-content: center;
-        display: grid;
-    } */
     input{
         width: 60vw;
         height: 5vh;
+        font-size: 3vw;
     }   
     .leb-1{
         font-size: 8vw;
     }
-    
+
     .lin-1{
         font-size: 4vw;
     }
