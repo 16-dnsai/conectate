@@ -21,7 +21,7 @@ body{
     align-items: center;
     box-shadow: 1px 1px 50px  #e0e0e0;
     gap: 20px;
-    background-image: url('./img/img_mundo.png');
+    background-image: url('img_mundo.png');
     background-size: cover;
     background-position: center;
     background-color: rgba(34, 37, 38, 100); /* Capa negra semitransparente */
