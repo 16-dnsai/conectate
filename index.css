@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    font-family: Swis721 Blk BT;
+    margin: 0px;
+}
+body{
+    background-color: #222526;
+    min-width: 100vw;   
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container-1{
+    border: solid 2px  #353A3E;
+    border-radius: 20px;
+    width: 25vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 50px  #e0e0e0;
+    gap: 20px;
+    background-image: url('../img/img_mundo.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(34, 37, 38, 100); /* Capa negra semitransparente */
+    background-blend-mode: overlay;
+}
+
+
+.container-2{
+    border: 1px solid #353A3E;
+    border-radius: 20px;
+    width: 27vw;
+    height: 42vh;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    text-align: center;
+}
+input{
+    width: 270px;
+    height: 40px;
+    background-color: #222526;
+    border: none;
+    color: #e0e0e0;
+    border-bottom: 2px solid #353A3E;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 1s;
+    border: 1px solid #353A3E;
+}
+input:focus{
+    outline: none;  
+    background-color: #353A3E;
+    transform: scale(1.05);
+    transition: 1s;
+}
+.leb-1{
+    font-weight:bold;
+    font-size: 30px;
+}
+.container-3{
+    width: 280px;
+    text-align: center;
+}
+.container-4{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+button{
+    background-color: #222526;
+    border: 2px solid #353A3E;
+    width: 100px;
+    height: 40px;
+    color: #e0e0e0;
+    border-radius: 15px;
+    transition: 1s;
+}
+button:hover{
+    background-color: #e0e0e0;  
+    transition: 1s;
+    color: #353A3E;
+    transform: scale(1.1);
+}
+a{
+    color: #e0e0e0;
+    text-decoration: none ;
+    font-size: 12px;
+    transition: 1s;
+}
+a:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    text-decoration: 1px dashed #e0e0e0;
+}
+
+@media screen and (max-width: 1000px){
+
+    .container-1{
+        width: 85vw;
+        height: 85vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2  {
+        width: 80vw;
+        height: 80vh;
+    }
+    input{
+        width: 60vw;
+        height: 5vh;
+    }   
+    .leb-1{
+        font-size: 8vw;
+    }
+    
+    .lin-1{
+        font-size: 4vw;
+    }
+    button{
+        width: 20vw;
+        height: 8vh;
+        font-size: 3vh;
+    }
+}
