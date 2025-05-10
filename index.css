@@ -14,14 +14,14 @@ body{
 .container-1{
     border: solid 2px  #353A3E;
     border-radius: 20px;
-    width: 25vw;
-    height: 45vh;
-    display: flex;
+    width: 380px;
+    height: 480px;
+    display: grid;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 50px  #e0e0e0;
     gap: 20px;
-    background-image: url('img_mundo.png');
+    background-image: url('../img/img_mundo.png');
     background-size: cover;
     background-position: center;
     background-color: rgba(34, 37, 38, 100); /* Capa negra semitransparente */
@@ -32,8 +32,8 @@ body{
 .container-2{
     border: 1px solid #353A3E;
     border-radius: 20px;
-    width: 27vw;
-    height: 42vh;
+    width: 360px;
+    height: 460px;
     display:grid;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,6 @@ input{
     text-align: center;
     border-radius: 15px;
     transition: 1s;
-    border: 1px solid #353A3E;
 }
 input:focus{
     outline: none;  
@@ -62,10 +61,14 @@ input:focus{
 .leb-1{
     font-weight:bold;
     font-size: 30px;
+    text-align: center;
 }
 .container-3{
     width: 280px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-4{
     display: grid;
@@ -105,7 +108,7 @@ a:hover{
     .container-1{
         width: 85vw;
         height: 85vh;
-        display: grid;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -113,6 +116,11 @@ a:hover{
         width: 80vw;
         height: 80vh;
     }
+    /* .container-3  {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+    } */
     input{
         width: 60vw;
         height: 5vh;
