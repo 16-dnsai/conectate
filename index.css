@@ -1,7 +1,7 @@
 *{
     padding: 0px;
-    font-family: Swis721 Blk BT;
     margin: 0px;
+    font-family:Swis721 Blk BT;  
 }
 body{
     background-color: #222526;
@@ -20,15 +20,35 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 50px  #e0e0e0;
-    gap: 20px;
-    background-image: url('img_mundo.png');
+    /* gap: 20px; */
+    background-image: url('../img/img_mundo.png');
     background-size: cover;
     background-position: center;
     background-color: rgba(34, 37, 38, 100); /* Capa negra semitransparente */
     background-blend-mode: overlay;
+    transition: 1s;
+    perspective: 1000px;
 }
-
-
+.container-gen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* .container-1:hover .container-gen{
+    transform: rotateY(180deg);
+    
+} */
+.container-2, .container-5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
 .container-2{
     border: 1px solid #353A3E;
     border-radius: 20px;
@@ -39,12 +59,13 @@ body{
     align-items: center;
     color: #e0e0e0;
     text-align: center;
+    transform: rotateY(0deg);
 }
 input{
     width: 270px;
     height: 40px;
     background-color: #222526;
-    border: none;
+    border: solid 2px #353A3E;
     color: #e0e0e0;
     border-bottom: 2px solid #353A3E;
     padding: 5px;
@@ -58,9 +79,10 @@ input:focus{
     transform: scale(1.05);
     transition: 1s;
 }
-.leb-1{
+.leb-1,.leb-6{
     font-weight:bold;
     font-size: 30px;
+    text-shadow:1px 1px 50px  #e0e0e0 ;
 }
 .container-3{
     width: 280px;
@@ -79,7 +101,7 @@ button{
     height: 40px;
     color: #e0e0e0;
     border-radius: 15px;
-    transition: 1s;
+    transition: 1s;;
 }
 button:hover{
     background-color: #e0e0e0;  
@@ -98,15 +120,98 @@ a:hover{
     transition: 1s;
     text-decoration: 1px dashed #e0e0e0;
 }
+.container-5{
+    border: 1px solid #353A3E;
+    border-radius: 20px;
+    width: 470px;
+    height: 530px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.container-6{
+    width: 470px;
+    height: 530px;
+    text-align: center;
+    justify-content: left;
+    display:grid;
+    margin-left: 10px;
+    gap: 10px;
+}
+.opc{
+    display: grid;
+    justify-content: center;
+    align-items: center ;
+    width: 150px;
+    height: 250px;
+    margin-top: -490px;
+    margin-left: 300px;
+    border: solid 2px #353A3E;
+    border-radius: 10px;
+}
+.cont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 420px;
+    border-radius: 10px;
+    border: solid 2px #353A3E;
+}   
+.botones{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: solid 2px #353A3E;
+    border-radius: 10px;
+    margin-top: -250px;
+    margin-left: 300px;
+}
+
+select{
+    background-color: #353A3E;
+    color: #e0e0e0;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.lin-1{
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
 
 @media screen and (max-width: 1000px){
-
     .container-1{
         width: 85vw;
         height: 85vh;
         display: grid;
         justify-content: center;
         align-items: center;
+    }
+    .container-5{
+        width: 85vw;
+        height: 85vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-gen{
+        width: 85vw;
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
+        display: grid;
     }
     .container-2  {
         width: 80vw;
