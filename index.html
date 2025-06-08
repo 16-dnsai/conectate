@@ -2,21 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conectate 2025</title>
 </head>
 <body>
     <div class="container-1">
-        <div class="container-2">
-            <label class="leb-1">CONECTATE<br>2025</label>
-            <div class="container-4">
-            <input type="text" placeholder="User">
-            <input type="password" placeholder="Password">
-            <div><button>Login</button></div>
-            <a class="lin-1" >Aun no tienes un perfil?<br>!!Registrate aquí!!</a>
+        <div class="container-gen">
+            <div class="container-2">
+                <label class="leb-1">CONECTATE<br>2025</label>
+                <div class="container-4">
+                    <input type="text" placeholder="User">
+                    <input type="password" placeholder="Password">
+                    <div><a href="principal.html"><button>Login</button></a></div>
+                    <button onclick="tamano()" class="lin-1" >Aun no tienes un perfil?<br>!!Registrate aquí!!</button>
+                </div>
+            </div>
+
+        <div class="container-5"> 
+            <label class="leb-6">CONECTATE<br>2025</label><br>
+            <div class="container-6">
+                <div class="cont">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Password">
+                    <input type="text" placeholder="Number Phone">
+                    <input type="text" class="edad" placeholder="Edad">
+                </div>
+            <br>
+            <div class="opc">
+                <div class="container-7">
+                <label class="leb-7">Género</label>
+                <menu>
+                    <select name="genero" class="genero">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </menu>
+                </div>
+                <div class="container-8">
+                    <label class="leb-8">País</label>
+                    <menu>
+                        <select name="pais" class="pais">
+                            <option value="guatemala">Guatemala</option>
+                            <option value="mexico">México</option>
+                            <option value="estados-unidos">Estados Unidos</option>
+                            <option value="costa_rica">Costa Rica</option>
+                            <option value="honduras">Honduras</option>
+                        </select>
+                    </menu>
+                </div>
+                <div class="container-9">
+                    <label class="leb-9">Talla de playera</label>
+                    <menu>
+                        <select name="talla" class="Talla">
+                            <option value="tallaXS">XS</option>
+                            <option value="tallaS">S</option>
+                            <option value="tallaM">M</option>
+                            <option value="tallaL">L</option>
+                            <option value="tallaXL">xl</option>
+                        </select>
+                    </menu>
+                </div>
+            </div>
+            <div class="botones">
+                <button name="registra">Registrarse</button>
+                <button name="simon" onclick="regresar()">Iniciar sesion</button>
+            </div>
+            </div> 
         </div>
         </div>
     </div>
-</body>
+</body> 
+<script src="script.js"></script>
 </html>
